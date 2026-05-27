@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- ═══ SEO PRIMAIRE ═══ -->
+<title>Réussir l'UE5 DCG — Frise chronologique de l'histoire et de la pensée économique</title>
+<meta name="description" content="Entraîne-toi à replacer auteurs, courants et événements sur la frise chronologique de la pensée économique. Jeu interactif de révision pour réussir l'UE5 du DCG — méthodologie DCG économie.">
+<meta name="keywords" content="frise pensée économique DCG, histoire pensée économique UE5, réussir UE5 DCG, méthode DCG économie, méthodologie UE5 DCG, révision économie DCG, frise chronologique économie">
+<meta name="author" content="Méthode DCG UE5">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://methodedcg-ue5.github.io/frise-dcg-ue5/">
+
+<!-- ═══ OPEN GRAPH (partage réseaux sociaux) ═══ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://methodedcg-ue5.github.io/frise-dcg-ue5/">
+<meta property="og:title" content="Réussir l'UE5 DCG — Frise chronologique de l'histoire et de la pensée économique">
+<meta property="og:description" content="Jeu interactif de révision : replace auteurs, courants et événements sur la frise de la pensée économique. Méthode DCG UE5.">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="Méthode DCG UE5">
+
+<!-- ═══ TWITTER CARD ═══ -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Réussir l'UE5 DCG — Frise chronologique de l'histoire et de la pensée économique">
+<meta name="twitter:description" content="Jeu interactif de révision : replace auteurs, courants et événements sur la frise de la pensée économique. Méthode DCG UE5.">
+
+<!-- ═══ JSON-LD STRUCTURED DATA ═══ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LearningResource",
+  "name": "Réussir l'UE5 DCG — Frise chronologique de l'histoire et de la pensée économique",
+  "description": "Jeu interactif de révision pour placer auteurs, courants et événements sur la frise chronologique de la pensée économique — DCG UE5.",
+  "url": "https://methodedcg-ue5.github.io/frise-dcg-ue5/",
+  "inLanguage": "fr",
+  "educationalLevel": "BTS/DCG",
+  "learningResourceType": "Quiz/Jeu interactif",
+  "teaches": "Histoire de la pensée économique",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Méthode DCG UE5",
+    "url": "https://methodedcg-ue5.github.io"
+  }
+}
+</script>
+
+<!-- ═══ GOOGLE TAG MANAGER ═══ -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GT-P8VC5VHS');</script>
+
+<!-- ═══ GOOGLE ANALYTICS GA4 ═══ -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-F51TDGR55K"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-F51TDGR55K');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+/* ══════════════════════════════════════════
+   VARIABLES — identiques au site flashcards
+══════════════════════════════════════════ */
+:root {
+  --bg:      #0f0f13;
+  --surface: #1a1a22;
+  --surface2:#22222e;
+  --border:  #2e2e3e;
+  --accent:  #c9a96e;
+  --text:    #e8e6f0;
+  --muted:   #888098;
+  --green:   #5ecb8a;
+  --red:     #e06b6b;
+  --purple:  #8b6fd4;
+  --radius:  16px;
+  --shadow:  0 8px 40px rgba(0,0,0,.5);
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  padding: 10px 20px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface); flex-shrink: 0;
+}
+header h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem; font-weight: 700; color: var(--accent);
+}
+.subtitle { font-size: .72rem; color: var(--muted); }
+.hud { margin-left: auto; display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+.hud-block {
+  display: flex; flex-direction: column; align-items: center;
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 10px; padding: 4px 11px; min-width: 52px;
+}
+.hud-val {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem; font-weight: 700; line-height: 1.1; color: var(--accent);
+}
+.hud-val.green { color: var(--green); }
+.hud-lbl { font-size: .58rem; text-transform: uppercase; letter-spacing: 1px; color: var(--muted); }
+
+/* ── GAME BAR ── */
+.game-bar {
+  padding: 8px 20px;
+  display: flex; align-items: center; gap: 12px; flex-wrap: wrap;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface); flex-shrink: 0;
+}
+.mode-toggle {
+  display: flex; background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 8px; padding: 3px; gap: 2px;
+}
+.mode-btn {
+  padding: 4px 14px; border-radius: 6px; border: none;
+  background: none; color: var(--muted);
+  font-family: 'DM Sans', sans-serif; font-size: .75rem;
+  cursor: pointer; transition: all .15s;
+}
+.mode-btn.active { background: var(--accent); color: #0f0f13; font-weight: 500; }
+.mode-btn:not(.active):hover { color: var(--text); }
+.btn {
+  padding: 5px 12px; border-radius: 8px; border: 1px solid var(--border);
+  background: var(--surface2); color: var(--muted);
+  font-family: 'DM Sans', sans-serif; font-size: .74rem;
+  cursor: pointer; transition: all .15s;
+}
+.btn:hover { border-color: var(--accent); color: var(--accent); }
+.game-bar-subtitle {
+  font-size: .72rem; color: var(--muted); flex: 1;
+  font-style: italic;
+}
+
+/* ── POOL ── */
+.pool-wrap {
+  padding: 8px 16px 10px;
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+}
+.pool-label {
+  font-size: .6rem; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--muted); margin-bottom: 7px; font-weight: 500;
+}
+.items-pool {
+  display: flex; flex-wrap: wrap; gap: 6px;
+  justify-content: center; min-height: 36px;
+}
+
+/* ── DRAG ITEMS ── */
+.drag-item {
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: .74rem;
+  font-weight: 500;
+  cursor: grab;
+  user-select: none;
+  transition: transform .15s, box-shadow .15s, opacity .2s;
+  white-space: nowrap;
+  border: 1px solid;
+  font-family: 'DM Sans', sans-serif;
+  letter-spacing: .01em;
+}
+.drag-item:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(0,0,0,.5); }
+.drag-item.dragging { opacity: 0.2; cursor: grabbing; }
+
+/* types — dark palette */
+.drag-item[data-type="auteur"]    { background: rgba(139,111,212,.15); border-color: var(--purple); color: #b49fe8; }
+.drag-item[data-type="courant"]   { background: rgba(201,169,110,.12); border-color: var(--accent);  color: var(--accent); }
+.drag-item[data-type="evenement"] { background: rgba(94,203,138,.1);   border-color: var(--green);   color: var(--green); }
+
+.drag-item.correct          { background: rgba(94,203,138,.15); border-color: var(--green); color: var(--green); cursor: default; }
+.drag-item.correct.prefilled{ opacity: 0.65; }
+.drag-item.wrong            { background: rgba(224,107,107,.15); border-color: var(--red); color: var(--red); }
+
+/* ── FRISE SCROLL ── */
+.frise-scroll {
+  overflow-x: auto;
+  padding: 10px 8px 14px;
+}
+.frise-table {
+  min-width: 1100px; width: 100%;
+  border-collapse: separate; border-spacing: 3px;
+}
+
+/* period header cells */
+.period-header {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--accent);
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: .78rem;
+  padding: 6px 4px;
+  line-height: 1.3;
+  border-radius: 8px 8px 0 0;
+  vertical-align: middle;
+}
+.period-header .dates {
+  display: block;
+  font-family: 'DM Sans', sans-serif;
+  font-size: .6rem;
+  font-weight: 400;
+  color: var(--muted);
+  margin-top: 2px;
+}
+
+/* section header rows */
+.section-row td {
+  padding: 3px 5px;
+  font-size: .6rem; font-weight: 500;
+  text-transform: uppercase; letter-spacing: .1em;
+  border-radius: 3px;
+}
+.section-row.s1 td { background: rgba(94,203,138,.1);  color: var(--green);  border: 1px solid rgba(94,203,138,.2); }
+.section-row.s2 td { background: rgba(201,169,110,.1); color: var(--accent); border: 1px solid rgba(201,169,110,.2); }
+.section-row.s3 td { background: rgba(139,111,212,.1); color: var(--purple); border: 1px solid rgba(139,111,212,.2); }
+
+/* section icon badge */
+.section-icon {
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 18px; height: 18px; border-radius: 50%;
+  font-size: .58rem; font-weight: 700; margin-right: 5px;
+  vertical-align: middle;
+}
+.icon-1 { background: rgba(94,203,138,.3);  color: var(--green); }
+.icon-2 { background: rgba(201,169,110,.3); color: var(--accent); }
+.icon-3 { background: rgba(139,111,212,.3); color: var(--purple); }
+
+/* timeline */
+.timeline-row td { background: var(--bg); padding: 0; height: 5px; position: relative; }
+.timeline-inner {
+  height: 5px;
+  background: linear-gradient(90deg, var(--green), var(--accent), var(--purple));
+  border-radius: 3px; margin: 0 2px;
+}
+.timeline-dot {
+  width: 9px; height: 9px; border-radius: 50%;
+  background: var(--bg); border: 2px solid var(--accent);
+  position: absolute; left: 50%; top: -2px;
+  transform: translateX(-50%);
+}
+
+/* frise cells */
+.frise-cell {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  vertical-align: top; padding: 5px;
+  border-radius: 6px; position: relative;
+}
+
+/* drop zones */
+.drop-zone {
+  min-height: 48px;
+  border: 1px dashed var(--border);
+  border-radius: 8px; padding: 4px;
+  display: flex; flex-wrap: wrap; gap: 4px;
+  align-content: flex-start;
+  transition: border-color .2s, background .2s;
+}
+.drop-zone.drag-over  { border-color: var(--accent); background: rgba(201,169,110,.07); }
+.drop-zone.correct-zone { border-color: var(--green);  background: rgba(94,203,138,.06); }
+.drop-zone.wrong-zone   { border-color: var(--red);    background: rgba(224,107,107,.06); }
+
+/* ── SUMMARY TABLE ── */
+.summary-section {
+  margin: 10px 8px 0;
+  background: var(--surface);
+  border-radius: var(--radius);
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+.summary-header {
+  background: var(--surface2);
+  border-bottom: 1px solid var(--border);
+  color: var(--accent);
+  text-align: center;
+  padding: 8px;
+  font-family: 'Playfair Display', serif;
+  font-size: .82rem; font-weight: 700;
+  letter-spacing: .04em;
+}
+.summary-table {
+  width: 100%; border-collapse: collapse;
+  font-size: .68rem; overflow-x: auto; display: block;
+}
+.summary-table th {
+  background: var(--surface2); padding: 6px 8px;
+  font-weight: 500; color: var(--muted);
+  border: 1px solid var(--border);
+  text-align: left; white-space: nowrap;
+  font-size: .63rem; text-transform: uppercase; letter-spacing: 1px;
+}
+.summary-table td {
+  padding: 6px 8px; border: 1px solid var(--border);
+  color: var(--muted); vertical-align: top; line-height: 1.4;
+}
+.summary-table tr:hover td { background: var(--surface2); color: var(--text); }
+.summary-table .row-th {
+  font-weight: 500; color: var(--accent); white-space: nowrap;
+  font-family: 'Playfair Display', serif; font-size: .75rem;
+}
+
+/* ── TOAST ── */
+#toast {
+  position: fixed; top: 68px; left: 50%;
+  transform: translateX(-50%) translateY(-14px);
+  background: var(--surface2); border: 1px solid var(--border);
+  border-radius: 40px; padding: 8px 20px;
+  font-size: .82rem; font-weight: 500; color: var(--text);
+  opacity: 0; pointer-events: none; z-index: 400;
+  transition: opacity .2s, transform .2s; white-space: nowrap;
+}
+#toast.show  { opacity:1; transform:translateX(-50%) translateY(0); }
+#toast.ok    { border-color: var(--green);  color: var(--green); }
+#toast.bad   { border-color: var(--red);    color: var(--red); }
+
+/* ── RESULT OVERLAY ── */
+#result {
+  display: none;
+  position: fixed; inset: 0;
+  background: rgba(15,15,19,.93);
+  align-items: center; justify-content: center;
+  z-index: 300;
+}
+#result.show { display: flex; }
+.ov-card {
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 24px; padding: 40px 50px;
+  text-align: center; max-width: 420px; width: 92%;
+  box-shadow: var(--shadow);
+}
+.ov-card h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.65rem; margin-bottom: 5px; color: var(--accent);
+}
+.ov-sub { font-size: .8rem; color: var(--muted); margin-bottom: 24px; }
+.ov-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 24px; }
+.ov-stat { background: var(--surface2); border-radius: 12px; padding: 13px; }
+.ov-stat .v { font-family: 'Playfair Display', serif; font-size: 1.8rem; font-weight: 700; color: var(--text); }
+.ov-stat .l { font-size: .65rem; color: var(--muted); text-transform: uppercase; letter-spacing: .8px; }
+.ov-stat.g .v { color: var(--green); }
+.ov-stat.r .v { color: var(--red); }
+.ov-stat.a .v { color: var(--accent); }
+.ov-btn {
+  width: 100%; padding: 12px; border-radius: 12px; border: none;
+  background: var(--accent); color: #0f0f13;
+  font-family: 'DM Sans', sans-serif; font-size: .9rem; font-weight: 500;
+  cursor: pointer; transition: opacity .15s; margin-top: 6px;
+}
+.ov-btn:hover { opacity: .85; }
+.ov-btn.outline {
+  background: transparent; color: var(--muted);
+  border: 1px solid var(--border); margin-top: 8px;
+}
+.ov-btn.outline:hover { border-color: var(--accent); color: var(--accent); opacity: 1; }
+
+/* ── CHECK ALL BTN ── */
+.btn-check-all {
+  display: block; margin: 12px auto 16px;
+  background: transparent; border: 1px solid var(--border);
+  color: var(--muted); border-radius: 8px;
+  padding: 7px 20px; font-family: 'DM Sans', sans-serif;
+  font-size: .78rem; cursor: pointer; transition: all .15s;
+}
+.btn-check-all:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ── SCROLLBAR ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+
+/* ── CONFETTI ── */
+@keyframes confetti-fall {
+  to { transform: translateY(110vh) rotate(720deg); opacity: 0; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══ GOOGLE TAG MANAGER (noscript) ═══ -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GT-P8VC5VHS"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div id="toast"></div>
+
+<header>
+  <h1>Frise chronologique — Histoire de la pensée économique</h1>
+  <span class="subtitle">Méthode DCG · UE5 · Réussir l'économie</span>
+  <div class="hud">
+    <div class="hud-block">
+      <span class="hud-val green" id="sc-ok">0</span>
+      <span class="hud-lbl">Corrects</span>
+    </div>
+    <div class="hud-block">
+      <span class="hud-val" id="sc-left">—</span>
+      <span class="hud-lbl">Restants</span>
+    </div>
+  </div>
+</header>
+
+<div class="game-bar">
+  <div class="mode-toggle">
+    <button class="mode-btn active" onclick="setMode('normal')">🧩 Mode normal</button>
+    <button class="mode-btn" onclick="setMode('difficile')">🔥 Mode difficile</button>
+  </div>
+  <span class="game-bar-subtitle" id="main-subtitle">Frise partiellement remplie — complète les cases vides</span>
+  <button class="btn" onclick="restart()">↺ Rejouer</button>
+</div>
+
+<div class="pool-wrap">
+  <div class="pool-label">Éléments à placer — glisse vers la bonne case de la frise</div>
+  <div class="items-pool" id="pool"
+    ondragover="allowDrop(event)"
+    ondrop="dropToPool(event)"></div>
+</div>
+
+<div id="game-area">
+  <div class="frise-scroll">
+    <table class="frise-table" id="frise-table"></table>
+  </div>
+
+  <div class="summary-section">
+    <div class="summary-header">Résumé des grandes oppositions de pensée</div>
+    <table class="summary-table">
+      <thead>
+        <tr>
+          <th>Courant</th>
+          <th>Classiques / Néoclassiques</th>
+          <th>Marxistes</th>
+          <th>Keynésiens / Néokeynésiens</th>
+          <th>Monétaristes / Nvx classiques</th>
+          <th>École de l'offre</th>
+          <th>Choix publics</th>
+          <th>Néokeynésiens critiques</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="row-th">Vision du marché</td>
+          <td>Efficace, autorégulateur</td>
+          <td>Source d'exploitation et d'inégalités</td>
+          <td>Peut être instable et insuffisant</td>
+          <td>Efficace si libre, informations parfaites</td>
+          <td>Freiné par la fiscalité et la réglementation</td>
+          <td>Défaillances de l'État (capture, incitations)</td>
+          <td>Défaillances de marché, asymétries, rigidités</td>
+        </tr>
+        <tr>
+          <td class="row-th">Rôle de l'État</td>
+          <td>Minimal</td>
+          <td>Transformation radicale</td>
+          <td>Intervention nécessaire (stabilisation)</td>
+          <td>Limiter l'État, stabilité monétaire</td>
+          <td>Limiter l'État, baisser les impôts</td>
+          <td>Limiter l'État, règles et incitations</td>
+          <td>Régulation ciblée, filets de sécurité</td>
+        </tr>
+        <tr>
+          <td class="row-th">Cause des crises</td>
+          <td>Perturbations externes</td>
+          <td>Contradictions internes du capitalisme</td>
+          <td>Insuffisance de la demande</td>
+          <td>Inflation monétaire ou chocs réels</td>
+          <td>Désincentions, pression fiscale</td>
+          <td>Incitations politiques</td>
+          <td>Rigidités, asymétries, instabilité financière</td>
+        </tr>
+        <tr>
+          <td class="row-th">Politique privilégiée</td>
+          <td>Laissez-faire, libre-échange</td>
+          <td>Planification / révolution sociale</td>
+          <td>Relance budgétaire, politiques publiques</td>
+          <td>Stabilité monétaire, politique restrictive si inflation</td>
+          <td>Baisse des impôts, offre, déréglementation</td>
+          <td>Règles, concurrence politique</td>
+          <td>Politiques mixtes, régulation intelligente</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <button class="btn-check-all" onclick="checkAll()">✓ Vérifier tous les placements</button>
+</div>
+
+<!-- RESULT OVERLAY -->
+<div id="result">
+  <div class="ov-card">
+    <h2 id="res-title">Résultat</h2>
+    <p class="ov-sub" id="res-sub"></p>
+    <div class="ov-stats">
+      <div class="ov-stat g">
+        <div class="v" id="res-ok">—</div>
+        <div class="l">Corrects</div>
+      </div>
+      <div class="ov-stat r">
+        <div class="v" id="res-wrong">—</div>
+        <div class="l">Erreurs</div>
+      </div>
+      <div class="ov-stat a" style="grid-column:1/-1">
+        <div class="v" id="res-pct">—</div>
+        <div class="l">Réussite</div>
+      </div>
+    </div>
+    <div id="res-msg" style="font-size:.84rem;color:var(--muted);margin-bottom:18px;"></div>
+    <button class="ov-btn" onclick="restart()">🔄 Rejouer</button>
+    <button class="ov-btn outline" onclick="closeResult()">✕ Fermer</button>
+  </div>
+</div>
+
+<script>
+/* ═══════════════════════════════════
+   DATA
+═══════════════════════════════════ */
+const PERIODS = [
+  { id:'p1', name:'XVIIIe siècle', dates:'vers 1770',
+    evenements:['1re révolution industrielle'],
+    courants:['Libéralisme classique'],
+    auteurs:['Adam Smith (1723–1790)'] },
+  { id:'p2', name:'XIXe s. (1re moitié)', dates:'1800–1850',
+    evenements:['Révolutions politiques et industrielles'],
+    courants:['Réflexion sur la croissance et la répartition'],
+    auteurs:['Thomas Malthus (1766–1834)','David Ricardo (1772–1823)','Jean-Baptiste Say (1767–1832)'] },
+  { id:'p3', name:'XIXe s. (2e moitié)', dates:'1850–1914',
+    evenements:['2e révolution industrielle'],
+    courants:["Naissance de l'économie néoclassique"],
+    auteurs:['Alfred Marshall (1842–1924)','Léon Walras (1834–1910)'] },
+  { id:'p4', name:'Début XXe siècle', dates:'1900–1929',
+    evenements:['Capitalisme industriel avancé'],
+    courants:['Capitalisme instable'],
+    auteurs:['Joseph Schumpeter (1883–1950)'] },
+  { id:'p5', name:'Années 1930', dates:'1930–1939',
+    evenements:['Crise de 1929 et Grande Dépression'],
+    courants:["Intervention de l'État nécessaire"],
+    auteurs:['John Maynard Keynes (1883–1946)','Irving Fisher (1867–1947)'] },
+  { id:'p6', name:'Trente Glorieuses', dates:'1945–1975',
+    evenements:['Les Trente Glorieuses'],
+    courants:['Keynésianisme dominant'],
+    auteurs:['Paul Samuelson (1915–2009)','Robert Solow (1924–2023)'] },
+  { id:'p7', name:'Stagflation', dates:'1970–1980',
+    evenements:['Chocs pétroliers et stagflation'],
+    courants:['Limites du keynésianisme'],
+    auteurs:['Milton Friedman (1912–2006)'] },
+  { id:'p8', name:'Années 1980–2000', dates:'1980–2000',
+    evenements:['Désinflation compétitive et mondialisation'],
+    courants:['Libéralisme monétaire et nouvelle macro classique'],
+    auteurs:['Friedrich Hayek (1899–1992)','James Buchanan (1919–2013)','Arthur Laffer (1940–)'] },
+  { id:'p9', name:'Depuis 2008', dates:'XXIe siècle',
+    evenements:['Crises financières et des dettes'],
+    courants:['Néokeynésianisme et critiques des marchés'],
+    auteurs:['Joseph Stiglitz (1943–)','Paul Krugman (1953–)','Thomas Piketty (1971–)'] }
+];
+
+/* ═══════════════════════════════════
+   STATE
+═══════════════════════════════════ */
+let mode = 'normal';
+let allItems = [];
+let prefilledIds = new Set();
+let placed = {};
+let draggedId = null;
+
+/* ═══════════════════════════════════
+   BUILD ITEMS
+═══════════════════════════════════ */
+function buildAllItems() {
+  let list = [];
+  PERIODS.forEach(p => {
+    p.auteurs.forEach(a    => list.push({ id:'a_'+a.replace(/\s/g,'_').slice(0,25),    label:a,    type:'auteur',    pid:p.id }));
+    p.courants.forEach(c   => list.push({ id:'c_'+c.replace(/\s/g,'_').slice(0,25),   label:c,   type:'courant',   pid:p.id }));
+    p.evenements.forEach(e => list.push({ id:'e_'+e.replace(/\s/g,'_').slice(0,25), label:e, type:'evenement', pid:p.id }));
+  });
+  return list;
+}
+
+function pickPrefilledItems(fullList) {
+  if (mode !== 'normal') return new Set();
+  const target = Math.round(fullList.length * 0.40);
+  const byPeriod = {};
+  PERIODS.forEach(p => byPeriod[p.id] = []);
+  fullList.forEach(item => byPeriod[item.pid].push(item));
+
+  const candidates = [];
+  PERIODS.forEach(p => {
+    const pItems = [...byPeriod[p.id]];
+    for(let i=pItems.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[pItems[i],pItems[j]]=[pItems[j],pItems[i]];}
+    const types = {};
+    pItems.forEach(item => { if (!types[item.type]) types[item.type] = item; });
+    candidates.push(...Object.values(types));
+  });
+  for(let i=candidates.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[candidates[i],candidates[j]]=[candidates[j],candidates[i]];}
+
+  const chosen = new Set();
+  const usedPeriods = new Set();
+  candidates.forEach(item => {
+    if (chosen.size >= target) return;
+    if (!usedPeriods.has(item.pid)) { chosen.add(item.id); usedPeriods.add(item.pid); }
+  });
+  candidates.forEach(item => {
+    if (chosen.size >= target) return;
+    if (!chosen.has(item.id)) chosen.add(item.id);
+  });
+  return chosen;
+}
+
+/* ═══════════════════════════════════
+   RENDER FRISE
+═══════════════════════════════════ */
+function renderFrise() {
+  const t = document.getElementById('frise-table');
+  t.innerHTML = '';
+
+  // Period headers
+  let row = t.insertRow();
+  row.insertCell(); // empty first col
+  PERIODS.forEach(p => {
+    const td = row.insertCell();
+    td.className = 'period-header';
+    td.innerHTML = p.name + '<span class="dates">' + p.dates + '</span>';
+  });
+
+  // Timeline
+  let tlrow = t.insertRow(); tlrow.className = 'timeline-row';
+  tlrow.insertCell().style.background = 'var(--bg)';
+  PERIODS.forEach(() => {
+    const td = tlrow.insertCell();
+    td.innerHTML = '<div class="timeline-inner"><div class="timeline-dot"></div></div>';
+  });
+
+  // 3 sections always visible
+  insertSectionHeaderRow(t, '1', '📅 Événements / Contexte', 's1');
+  insertDropRow(t, 'evenement');
+  insertSectionHeaderRow(t, '2', '💡 Courants / Idées', 's2');
+  insertDropRow(t, 'courant');
+  insertSectionHeaderRow(t, '3', '👤 Auteurs / Représentants', 's3');
+  insertDropRow(t, 'auteur');
+}
+
+function insertSectionHeaderRow(t, num, label, cls) {
+  let row = t.insertRow(); row.className = 'section-row ' + cls;
+  const first = row.insertCell();
+  first.innerHTML = '<span class="section-icon icon-' + num + '">' + num + '</span>' + label;
+  PERIODS.forEach(() => row.insertCell());
+}
+
+function insertDropRow(t, type) {
+  let row = t.insertRow();
+  row.insertCell();
+  PERIODS.forEach(p => {
+    const td = row.insertCell(); td.className = 'frise-cell';
+    const dz = document.createElement('div');
+    dz.className = 'drop-zone';
+    dz.id = 'dz_' + p.id + '_' + type;
+    dz.dataset.pid = p.id; dz.dataset.type = type;
+    dz.addEventListener('dragover', allowDrop);
+    dz.addEventListener('drop', e => dropToZone(e, p.id, type));
+    dz.addEventListener('dragenter', () => dz.classList.add('drag-over'));
+    dz.addEventListener('dragleave', () => dz.classList.remove('drag-over'));
+    td.appendChild(dz);
+  });
+}
+
+/* ═══════════════════════════════════
+   RENDER POOL & PREFILLED
+═══════════════════════════════════ */
+function renderPool() {
+  const pool = document.getElementById('pool');
+  pool.innerHTML = '';
+  allItems.forEach(item => pool.appendChild(makeEl(item)));
+}
+
+function renderPrefilled(fullList) {
+  fullList.forEach(item => {
+    if (!prefilledIds.has(item.id)) return;
+    const dz = document.getElementById('dz_' + item.pid + '_' + item.type);
+    if (!dz) return;
+    const el = document.createElement('div');
+    el.className = 'drag-item correct prefilled';
+    el.dataset.id = item.id; el.dataset.type = item.type;
+    el.draggable = false; el.style.cursor = 'default';
+    el.textContent = item.label;
+    dz.appendChild(el);
+    dz.classList.add('correct-zone');
+    placed[item.id] = item.pid;
+  });
+}
+
+function makeEl(item) {
+  const el = document.createElement('div');
+  el.className = 'drag-item';
+  el.dataset.id = item.id; el.dataset.type = item.type;
+  el.draggable = true; el.textContent = item.label;
+  el.addEventListener('dragstart', e => {
+    draggedId = item.id; el.classList.add('dragging');
+    e.dataTransfer.effectAllowed = 'move';
+  });
+  el.addEventListener('dragend', () => {
+    el.classList.remove('dragging');
+    document.querySelectorAll('.drop-zone').forEach(z => z.classList.remove('drag-over'));
+  });
+  el.addEventListener('touchstart', touchStart, { passive: true });
+  el.addEventListener('touchmove',  touchMove,  { passive: false });
+  el.addEventListener('touchend',   touchEnd);
+  return el;
+}
+
+/* ═══════════════════════════════════
+   DRAG & DROP
+═══════════════════════════════════ */
+function allowDrop(e) { e.preventDefault(); }
+
+function dropToZone(e, pid, type) {
+  e.preventDefault();
+  e.currentTarget.classList.remove('drag-over');
+  if (!draggedId) return;
+  const item = allItems.find(i => i.id === draggedId);
+  if (!item) return;
+  if (item.type !== type) { showToast('Mauvaise section !', 'bad'); return; }
+  if (prefilledIds.has(item.id)) return;
+
+  removeFromDOM(draggedId);
+  const dz = document.getElementById('dz_' + pid + '_' + type);
+  if (!dz) return;
+  const el = makeEl(item);
+  dz.appendChild(el);
+  placed[item.id] = pid;
+
+  const ok = item.pid === pid;
+  if (ok) {
+    el.classList.add('correct'); el.draggable = false; el.style.cursor = 'default';
+    dz.classList.add('correct-zone');
+  } else {
+    el.classList.add('wrong');
+    dz.classList.add('wrong-zone');
+    setTimeout(() => dz.classList.remove('wrong-zone'), 1200);
+  }
+  showToast(ok ? '✓ Bonne période !' : '✗ Mauvaise période', ok ? 'ok' : 'bad');
+  updateScore();
+  checkDone();
+}
+
+function dropToPool(e) {
+  e.preventDefault();
+  if (!draggedId) return;
+  const item = allItems.find(i => i.id === draggedId);
+  if (!item || prefilledIds.has(item.id)) return;
+  if (placed[item.id] === item.pid) return;
+  removeFromDOM(draggedId);
+  delete placed[item.id];
+  document.getElementById('pool').appendChild(makeEl(item));
+  updateScore();
+  draggedId = null;
+}
+
+function removeFromDOM(id) {
+  const el = document.querySelector(`[data-id="${id}"]`);
+  if (el) el.remove();
+}
+
+/* ═══════════════════════════════════
+   SCORE & CHECK
+═══════════════════════════════════ */
+function updateScore() {
+  const draggablePlaced = Object.keys(placed).filter(id => !prefilledIds.has(id)).length;
+  const left = allItems.length - draggablePlaced;
+  document.getElementById('sc-ok').textContent   = Object.keys(placed).filter(id => !prefilledIds.has(id) && placed[id] === allItems.find(i=>i.id===id)?.pid).length;
+  document.getElementById('sc-left').textContent = left;
+}
+
+function checkAll() {
+  allItems.forEach(item => {
+    if (!placed[item.id]) return;
+    const el = document.querySelector(`.frise-cell [data-id="${item.id}"]`);
+    if (!el) return;
+    const ok = placed[item.id] === item.pid;
+    el.classList.remove('correct','wrong');
+    if (ok) { el.classList.add('correct'); el.draggable = false; el.style.cursor = 'default'; }
+    else    { el.classList.add('wrong'); }
+  });
+  updateScore();
+  checkDone();
+}
+
+function checkDone() {
+  const draggablePlaced = Object.keys(placed).filter(id => !prefilledIds.has(id)).length;
+  if (draggablePlaced === allItems.length) setTimeout(showResult, 600);
+}
+
+/* ═══════════════════════════════════
+   RESULT
+═══════════════════════════════════ */
+function showResult() {
+  const correct = allItems.filter(item => placed[item.id] === item.pid).length;
+  const wrong   = allItems.length - correct;
+  const pct     = Math.round(correct / allItems.length * 100);
+
+  document.getElementById('res-ok').textContent    = correct;
+  document.getElementById('res-wrong').textContent = wrong;
+  document.getElementById('res-pct').textContent   = pct + '%';
+
+  const [title, msg, confetti] =
+    pct >= 90 ? ['🏆 Maîtrisé !',         'Excellente maîtrise de la frise.', true]
+  : pct >= 70 ? ['👍 Bien joué !',         'Quelques périodes à consolider.', false]
+  : pct >= 50 ? ['📚 Peut mieux faire',    'Relis la frise et réessaie.', false]
+  :             ['🔁 À retravailler',       'Courage, la méthode paie toujours !', false];
+
+  document.getElementById('res-title').textContent = title;
+  document.getElementById('res-sub').textContent   = correct + ' / ' + allItems.length + ' bons placements';
+  document.getElementById('res-msg').textContent   = msg;
+  document.getElementById('result').classList.add('show');
+  if (confetti) launchConfetti();
+}
+
+function closeResult() {
+  document.getElementById('result').classList.remove('show');
+}
+
+/* ═══════════════════════════════════
+   RESTART / SET MODE
+═══════════════════════════════════ */
+function setMode(m) {
+  mode = m;
+  document.querySelectorAll('.mode-btn').forEach((b,i) => {
+    b.classList.toggle('active', ['normal','difficile'][i] === m);
+  });
+  document.getElementById('main-subtitle').textContent =
+    m === 'normal' ? 'Frise partiellement remplie — complète les cases vides'
+                   : 'Mode difficile — place tous les éléments sans aide';
+  restart();
+}
+
+function restart() {
+  placed = {}; draggedId = null;
+  document.getElementById('result').classList.remove('show');
+  const fullList = buildAllItems();
+  prefilledIds = pickPrefilledItems(fullList);
+  allItems = fullList.filter(item => !prefilledIds.has(item.id));
+  for(let i=allItems.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[allItems[i],allItems[j]]=[allItems[j],allItems[i]];}
+  renderFrise();
+  renderPrefilled(fullList);
+  renderPool();
+  updateScore();
+}
+
+/* ═══════════════════════════════════
+   TOAST
+═══════════════════════════════════ */
+function showToast(msg, cls) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.className = 'show ' + cls;
+  clearTimeout(el._t);
+  el._t = setTimeout(() => el.className = '', 1800);
+}
+
+/* ═══════════════════════════════════
+   TOUCH DRAG
+═══════════════════════════════════ */
+let touchClone = null;
+function touchStart(e) {
+  const el = e.currentTarget;
+  draggedId = el.dataset.id;
+  const t = e.touches[0];
+  touchClone = el.cloneNode(true);
+  touchClone.style.cssText = `position:fixed;pointer-events:none;z-index:9999;opacity:.85;left:${t.clientX-40}px;top:${t.clientY-15}px;`;
+  document.body.appendChild(touchClone);
+}
+function touchMove(e) {
+  e.preventDefault();
+  const t = e.touches[0];
+  if (touchClone) { touchClone.style.left = (t.clientX-40)+'px'; touchClone.style.top = (t.clientY-15)+'px'; }
+  document.querySelectorAll('.drop-zone').forEach(z => {
+    const r = z.getBoundingClientRect();
+    z.classList.toggle('drag-over', t.clientX>=r.left && t.clientX<=r.right && t.clientY>=r.top && t.clientY<=r.bottom);
+  });
+}
+function touchEnd(e) {
+  if (touchClone) { touchClone.remove(); touchClone = null; }
+  document.querySelectorAll('.drop-zone').forEach(z => z.classList.remove('drag-over'));
+  const t = e.changedTouches[0];
+  const els = document.elementsFromPoint(t.clientX, t.clientY);
+  const dz  = els.find(el => el.classList && el.classList.contains('drop-zone'));
+  if (dz) { dropToZone({ preventDefault:()=>{}, currentTarget:dz }, dz.dataset.pid, dz.dataset.type); }
+  else {
+    const pool = document.getElementById('pool');
+    const pr = pool.getBoundingClientRect();
+    if (t.clientX>=pr.left && t.clientX<=pr.right && t.clientY>=pr.top && t.clientY<=pr.bottom)
+      dropToPool({ preventDefault:()=>{} });
+  }
+  draggedId = null;
+}
+
+/* ═══════════════════════════════════
+   CONFETTI
+═══════════════════════════════════ */
+function launchConfetti() {
+  const colors = ['#c9a96e','#5ecb8a','#8b6fd4','#e06b6b','#e8e6f0'];
+  for(let i=0;i<80;i++){
+    const el = document.createElement('div');
+    el.style.cssText = `position:fixed;width:7px;height:7px;border-radius:2px;background:${colors[i%colors.length]};left:${Math.random()*100}vw;top:-10px;animation:confetti-fall ${1.5+Math.random()*2}s linear ${Math.random()*0.5}s forwards;z-index:9999;pointer-events:none;`;
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), 3500);
+  }
+}
+
+/* ═══════════════════════════════════
+   INIT
+═══════════════════════════════════ */
+restart();
+</script>
+
+<!-- ── Bandeau cookies ── -->
+<div id="cookie-banner" style="
+  position:fixed;bottom:0;left:0;right:0;z-index:9000;
+  background:rgba(15,15,19,.96);border-top:1px solid rgba(201,169,110,.3);
+  padding:.55rem 1.4rem;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1rem;
+  font-family:'DM Sans',sans-serif;
+  transform:translateY(110%);transition:transform .4s cubic-bezier(.22,1,.36,1);
+">
+  <p style="font-size:.72rem;color:rgba(232,230,240,.45);line-height:1.4;flex:1;min-width:0;">
+    Ce site utilise des cookies analytiques (GA4).
+    <a href="https://methodedcg-ue5.fr/politique-de-confidentialite.html" target="_blank" rel="noopener"
+       style="color:rgba(201,169,110,.6);text-decoration:none;">En savoir plus</a>
+    — <span id="ck-refuse" style="color:rgba(232,230,240,.3);text-decoration:underline;cursor:pointer;font-size:.68rem;">Refuser</span>
+  </p>
+  <button id="ck-accept" style="
+    background:#c9a96e;border:none;color:#0f0f13;border-radius:5px;
+    padding:.35rem 1rem;font-size:.7rem;font-family:'DM Sans',sans-serif;
+    font-weight:600;letter-spacing:.06em;text-transform:uppercase;cursor:pointer;
+    white-space:nowrap;flex-shrink:0;
+  ">OK</button>
+</div>
+<script>
+(function(){
+  var banner = document.getElementById('cookie-banner');
+  var consent = localStorage.getItem('dcg_cookie_consent');
+  if (!consent) {
+    banner.style.display = 'flex';
+    setTimeout(function(){ banner.style.transform = 'translateY(0)'; }, 400);
+  }
+  document.getElementById('ck-accept').addEventListener('click', function(){
+    localStorage.setItem('dcg_cookie_consent','accepted');
+    banner.style.transform = 'translateY(110%)';
+    if (typeof loadGA === 'function') loadGA();
+  });
+  document.getElementById('ck-refuse').addEventListener('click', function(){
+    localStorage.setItem('dcg_cookie_consent','refused');
+    banner.style.transform = 'translateY(110%)';
+  });
+})();
+</script>
+</body>
+</html>
